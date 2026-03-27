@@ -1,16 +1,39 @@
-## Hi there 👋
+# Hi, I'm Mateo 👋
 
-<!--
-**mateo-ulla/mateo-ulla** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## About Me
 
-Here are some ideas to get you started:
+Programming student with technical training, focused on software development, data analysis, and finance.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+I build my profile around a clear intersection: technology, data, and decision-making.  
+My goal is to develop strong technical skills while creating projects that are useful, readable, and professionally solid.
+
+## Interests
+
+- Software development
+- Data analysis
+- Finance and markets
+- Productive tools and automation
+- Building practical projects with real-world value
+
+## Current Focus
+
+- Strengthening my foundations in programming and computer science
+- Improving my skills in Python, JavaScript, SQL, and Git
+- Building projects that combine code, data, and financial analysis
+- Developing a strong personal brand as a future tech professional
+
+## Projects
+
+- Personal portfolio: [portfolio-mateo-ulla.onrender.com](https://portfolio-mateo-ulla.onrender.com/)
+- More projects coming soon
+
+## What I'm Looking For
+
+- Learn from real-world development and clean code practices
+- Collaborate on projects that involve software, data, or finance
+- Keep growing through consistent practice and better problem solving
+
+## Contact
+
+- Portfolio: [portfolio-mateo-ulla.onrender.com](https://portfolio-mateo-ulla.onrender.com/)
+- GitHub: your GitHub profile link here
