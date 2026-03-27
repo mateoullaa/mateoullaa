@@ -22,7 +22,6 @@ My goal is to develop strong technical skills while creating projects that are u
 
 ## Projects
 
-- Personal portfolio: [portfolio-mateo-ulla.onrender.com](https://portfolio-mateo-ulla.onrender.com/)
 - More projects coming soon
 
 ## What I'm Looking For
