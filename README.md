@@ -1,5 +1,3 @@
-# Hi, I'm Mateo 👋
-
 ## About Me
 
 Programming student with technical training, focused on software development, data analysis, and finance.
@@ -35,5 +33,5 @@ My goal is to develop strong technical skills while creating projects that are u
 
 ## Contact
 
-- Portfolio: [portfolio-mateo-ulla.onrender.com](https://portfolio-mateo-ulla.onrender.com/)
-- GitHub: [your GitHub profile link here](https://github.com/mateo-ulla)
+- [Portfolio](https://portfolio-mateo-ulla.onrender.com/)
+- [GitHub](https://github.com/mateo-ulla)
