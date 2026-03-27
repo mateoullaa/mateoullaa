@@ -28,7 +28,7 @@ I build projects at the intersection of code, data, and decision-making. My goal
 - Building projects that combine code, data, and financial analysis
 - Developing a strong and consistent personal brand as a future tech professional
 
-## Technologies I’m Learning
+## Technologies I Master
 
 <p align="left">
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
@@ -41,14 +41,14 @@ I build projects at the intersection of code, data, and decision-making. My goal
 
 ## Who Am I?
 
-- Role: Programming student
-- Interests: Software Development, Data Analysis, Finance
-- Mindset: Learn fast, build consistently, improve with feedback
+- Interests: Software Development, Data Analysis, Finance, Gym
+- Mindset: Always learning, building consistency, improving with feedback
 
 ## Projects
 
-- Portfolio: [portfolio-mateo-ulla.onrender.com](https://portfolio-mateo-ulla.onrender.com/)
-- More projects coming soon
+- [Portfolio](https://portfolio-mateo-ulla.onrender.com/)
+- [Trading]([https://portfolio-mateo-ulla.onrender.com/](https://github.com/mateoullaa/TRADING-ALGORITMICO))
+- [Django]([https://portfolio-mateo-ulla.onrender.com/](https://github.com/mateoullaa/Taller-Mecanico-Django-V2))
 
 ## What I'm Looking For
 
