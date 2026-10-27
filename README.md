@@ -51,7 +51,6 @@ I design and develop projects end-to-end — from architecture to Docker deploym
 
 ## Featured Projects
 
----
 
 ### 🔷 Prism — AI-Powered SOC Alert Triage Agent
 
