@@ -59,8 +59,9 @@ I design and develop projects end-to-end — from architecture to Docker deploym
 
 On-premise AI agent that automates the first triage layer of a Security Operations Center. Receives Wazuh alerts via webhook, classifies them, enriches indicators of compromise with three threat intelligence APIs in parallel, and uses a **local LLM** to produce a structured verdict — MITRE ATT&CK mapping, risk score, and recommended next action. Routes alerts to TheHive 5 via Shuffle SOAR.
 
-**v2.2:** RAG pipeline with ChromaDB + Ollama embeddings — retrieves the N most similar historical alerts and injects them as context into the LLM prompt. Shadow-mode auto-classification: when past precedents are unanimously FALSE_POSITIVE at high similarity, the system skips the LLM entirely (~15s saved per alert).
+**v2.2:** RAG pipeline with ChromaDB + Ollama embeddings — retrieves the N most similar historical alerts and injects them as context into the LLM prompt. Auto-classifying false positives from those precedents runs in shadow mode: it logs what it would do, without acting, until the corpus is large enough to validate it.
 
+- **~7 min → 12–15 s** first-pass triage per alert (~97%); designed from **6,320 real production alerts**
 - Production-deployed in Docker, wired end-to-end: Wazuh → Prism → TheHive
 - **334 deterministic tests**, zero network required (all external APIs mocked)
 - Metrics dashboard: `GET /dashboard` (Chart.js) + `GET /metrics` (JSON audit stats)
@@ -70,17 +71,17 @@ On-premise AI agent that automates the first triage layer of a Security Operatio
 
 ---
 
-### 🧮 Strategy Creator — Deterministic Trading Strategy Generator
+### 🧮 Axiom — Deterministic Trading Strategy Builder
 
-> `Python` · `FastAPI` · `React` · `Pydantic v2` · `backtesting.py` · `Binance API`
+> `Python` · `FastAPI` · `Pydantic v2` · `pandas` · `backtesting.py` · `React` · `Tailwind`
 
-Full-stack tool that turns a trading pair, timeframe, indicator set, and risk profile into a systematic, backtested trading strategy — with **zero AI in the runtime loop**. Every strategy is composed from a fixed, mechanically-linted catalog of objective rules, verified to contain no discretionary logic, so identical inputs always produce byte-identical generated code.
+Builds trading strategies from a closed catalog of objective rules, lints them, exports each one as a standalone Python file, and backtests that exact file on real market data.
 
-- Deterministic rules engine + code generator, validated against real market data
-- **62 automated tests**
-- FastAPI backend, React/Vite frontend
+- **No AI at runtime:** the same inputs always produce the same strategy
+- 70/30 out-of-sample split; every result is published, including the ones that lose to buy & hold
+- **93 tests**, CI on GitHub Actions
 
-🔗 [github.com/mateoullaa/STRATEGY-CREATOR](https://github.com/mateoullaa/STRATEGY-CREATOR)
+🔗 [github.com/mateoullaa/axiom](https://github.com/mateoullaa/axiom)
 
 ---
 
@@ -91,16 +92,6 @@ Full-stack tool that turns a trading pair, timeframe, indicator set, and risk pr
 A pair of Claude Code Skills that turn a blank folder into a structured, self-improving development agent — with a real verification loop, not just a longer system prompt. Separates deterministic execution from agent orchestration (Planner → Builder → Reviewer → Scribe), enforces a hard review gate before any task is marked done, and logs every failure to a running memory file so the agent keeps improving within a project over time.
 
 🔗 [github.com/mateoullaa/Claude-Code-Project-Harness](https://github.com/mateoullaa/Claude-Code-Project-Harness)
-
----
-
-### 🌐 Portfolio Website — Personal Site & CV
-
-> `React` · `Flask` · `Personal Branding`
-
-Personal portfolio and CV hub — background, skills breakdown, education, and a full project catalog, with a downloadable CV and direct links to LinkedIn and GitHub. The single best starting point for anyone (recruiter, professor, client) who wants the full picture in one place.
-
-🔗 [portfolio-mateo-ulla.onrender.com](https://portfolio-mateo-ulla.onrender.com/)
 
 ---
 
@@ -133,7 +124,7 @@ Local, read-only dashboard that reads Claude Code's own transcript logs and turn
 - **End-to-end ownership** — I design, build, test, and deploy. From architecture decisions to Docker containers in production.
 - **AI & local inference** — local LLMs (Ollama), vector search (ChromaDB), RAG pipelines, without sending data to external services.
 - **Engineering discipline** — deterministic logic over probabilism, fail-safe design, mocked test suites. No half-finished implementations.
-- **Real operational context** — Prism runs in a live SOC environment processing production security alerts daily.
+- **Real operational context** — Prism was deployed in a production SOC and validated against live alerts; its design came from 6,320 real ones.
 
 ## Interests
 
@@ -147,6 +138,5 @@ Local, read-only dashboard that reads Claude Code's own transcript logs and turn
 
 - [GitHub](https://github.com/mateoullaa)
 - [LinkedIn](https://www.linkedin.com/in/mateoulla/)
-- [Portfolio](https://portfolio-mateo-ulla.onrender.com/)
 
 ---
