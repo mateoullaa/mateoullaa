@@ -120,9 +120,9 @@ Local, read-only dashboard that reads Claude Code's own transcript logs and turn
 
 ## How I Work
 
-- **End-to-end ownership** — I design, build, test, and deploy. From architecture decisions to Docker containers in production.
+- **End-to-end ownership** — I design, build, test, and deploy, from architecture to Docker.
 - **AI & local inference** — local LLMs (Ollama), vector search (ChromaDB), RAG pipelines, without sending data to external services.
-- **Engineering discipline** — deterministic logic over probabilism, fail-safe design, mocked test suites. No half-finished implementations.
+- **Engineering discipline** — deterministic logic over probabilism, fail-safe design, mocked test suites.
 - **Real operational context** — Prism was deployed in a production SOC and validated against live alerts; its design came from 6,320 real ones.
 
 ## Interests
